@@ -90,9 +90,14 @@ function inches() {
   let yards = Math.floor((inches % 63360) / 36);
   let feet = Math.floor(((inches % 63360) % 36) / 12);
   let inches1 = Math.floor(((inches % 63360) % 36) % 12);
-  var five = document.getElementById('output5');
-
-  five.innerHTML = 'Miles: ' + miles \n 'Yards: ' + yards;
+  var five1 = document.getElementById('output5.1');
+  five1.innerHTML = 'Miles: ' + miles;
+  var five2 = document.getElementById('output5.2');
+  five2.innerHTML = 'Yards: ' + yards;
+  var five3 = document.getElementById('output5.3');
+  five3.innerHTML = 'Feet: ' + feet;
+  var five4 = document.getElementById('output5.4');
+  five4.innerHTML = 'Inches: ' + inches1;
   ////////////////////////// DO NOT MODIFY
   check("inches", input); // DO NOT MODIFY
   ////////////////////////// DO NOT MODIFY
