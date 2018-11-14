@@ -200,6 +200,7 @@ function money() {
   let dimes = Math.floor(((pennies % 100) % 25) / 10);
   let nickels = Math.floor((((pennies % 100) % 25) % 10) / 5);
   let pennies = Math.floor((((pennies % 100) % 25) % 10) % 5);
+  let nine = document.getElementById('output9')
   ///////////////////////// DO NOT MODIFY
   check("money", input); // DO NOT MODIFY
   ///////////////////////// DO NOT MODIFY
