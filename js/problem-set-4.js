@@ -181,4 +181,54 @@ function ounces() {
 /*
  * Money. 7 points.
  */
+function money() {
 
+  /////////////////////////////////////////////////////// DO NOT MODIFY
+  let input = prompt("Enter a non-negative integer."); // DO NOT MODIFY
+  /////////////////////////////////////////////////////// DO NOT MODIFY
+
+  // You are free to modify the value of pennies, which you'll likely
+  // need to do. Please do not modify the value of input.
+
+  /////////////////////// DO NOT MODIFY
+  let pennies = input; // DO NOT MODIFY
+  /////////////////////// DO NOT MODIFY
+
+  let dollars = Math.floor(pennies / 100);
+  let quarters = Math.floor((pennies % 100) / 25);
+  let dimes = Math.floor(((pennies % 100) % 25) / 10);
+  let nickels = Math.floor((((pennies % 100) % 25) % 10) / 5);
+  let pennies1 = Math.floor((((pennies % 100) % 25) % 10) % 5);
+  let nine = document.getElementById('output9');
+  nine.innerHTML = 'Dollars: ' + dollars + "<br/>" + 'Quarters: ' + quarters + "<br/>" + 'Dimes: ' + dimes + "<br/>" + 'Nickels: ' + nickels + "<br/>" + 'Pennies: ' + pennies1;
+  ///////////////////////// DO NOT MODIFY
+  check("money", input); // DO NOT MODIFY
+  ///////////////////////// DO NOT MODIFY
+}
+
+/*
+ * Change. 8 points.
+ */
+
+function change() {
+
+  ///////////////////////////////////////////////////////////////////// DO NOT MODIFY
+  let input = prompt("Enter a non-negative number less than 1.00."); // DO NOT MODIFY
+  ///////////////////////////////////////////////////////////////////// DO NOT MODIFY
+
+  // You are free to modify the value of amount, which you'll likely
+  // need to do. Please do not modify the value of input.
+
+  ////////////////////// DO NOT MODIFY
+  let amount = input; // DO NOT MODIFY
+  ////////////////////// DO NOT MODIFY
+  let quarters10 = Math.floor(amount / 0.25);
+  let dimes10 = Math.floor((amount % 0.25) / 0.10);
+  let nickels10 = Math.floor(((amount % 0.25) % 0.10) / 0.05);
+  let pennies10 = Math.floor(((amount % 0.25) % 0.10) % 0.05);
+  let ten = document.getElementById('output10');
+  ten.innerHTML = 'Quarters: ' + quarters10 + "<br/>" + 'Dimes: ' + dimes10 + "<br/>" + 'Nickels: ' + nickels10 + "<br/>" + 'Pennies: ' + pennies10;
+  ////////////////////////// DO NOT MODIFY
+  check("change", input); // DO NOT MODIFY
+  ////////////////////////// DO NOT MODIFY
+}
