@@ -223,8 +223,12 @@ function change() {
   ////////////////////// DO NOT MODIFY
   let amount = input; // DO NOT MODIFY
   ////////////////////// DO NOT MODIFY
-
-  
+  let quarters = Math.floor(amount / 0.25);
+  let dimes = Math.floor((amount % 0.25) / 0.10);
+  let nickels = Math.floor(((amount % 0.25) % 0.10) / 0.05);
+  let pennies = Math.floor(((amount % 0.25) % 0.10) % 0.05);
+  let ten = document.getElementById('output10');
+  ten.innerHTML = 'Quarters: ' + quarters + "<br/>" + 'Dimes: ' + dimes + "<br/>" + 'Nickels; ' + nickels + "<br/>" + 'Pennies: ' + pennies;
   ////////////////////////// DO NOT MODIFY
   check("change", input); // DO NOT MODIFY
   ////////////////////////// DO NOT MODIFY
