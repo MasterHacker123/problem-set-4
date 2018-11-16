@@ -228,7 +228,7 @@ function change() {
   let pennies10 = Math.floor(((amount % 0.25) % 0.10) % 0.05);
   let coins = quarters10 + dimes10 + nickels10 + pennies10;
   let ten = document.getElementById('output10');
-  ten.innerHTML = coins + ' coins';
+  ten.innerHTML = coins + ' coins.';
   ////////////////////////// DO NOT MODIFY
   check("change", input); // DO NOT MODIFY
   ////////////////////////// DO NOT MODIFY
