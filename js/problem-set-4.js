@@ -228,7 +228,7 @@ function change() {
   alert(numberOfDimes);
   let numberOfNickels = Math.floor(((amount % 0.25) % 0.10) / 0.05);
   alert(numberOfNickels);
-  let numberOfPennies = Math.floor(((amount % 0.25) % 0.10) % 0.05);
+  let numberOfPennies = Math.floor((((amount % 0.25) % 0.10) % 0.05) * 100);
   alert(numberOfPennies);
   let coins = numberOfQuarters + numberOfDimes + numberOfNickels + numberOfPennies;
   let ending;
