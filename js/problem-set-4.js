@@ -222,7 +222,7 @@ function change() {
   ////////////////////// DO NOT MODIFY
   let amount = input; // DO NOT MODIFY
   ////////////////////// DO NOT MODIFY
-  let amount = amount * 100
+  amount = amount * 100
   let numberOfQuarters = Math.floor(amount / 25);
   let numberOfDimes = Math.floor((amount % 25) / 10);
   let numberOfNickels = Math.floor(((amount % 25) % 10) / 5);
