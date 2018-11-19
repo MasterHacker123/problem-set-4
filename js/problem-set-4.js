@@ -232,6 +232,7 @@ function change() {
     let ending = "coin."
   } else {
     let ending = "coins."
+  }
   let ten = document.getElementById('output10');
   ten.innerHTML = coins + ending;
   ////////////////////////// DO NOT MODIFY
