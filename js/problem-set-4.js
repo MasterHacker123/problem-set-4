@@ -223,9 +223,13 @@ function change() {
   let amount = input; // DO NOT MODIFY
   ////////////////////// DO NOT MODIFY
   let numberOfQuarters = Math.floor(amount / 0.25);
+  alert(numberOfQuarters);
   let numberOfDimes = Math.floor((amount % 0.25) / 0.1);
+  alert(numberOfDimes);
   let numberOfNickels = Math.floor(((amount % 0.25) % 0.10) / 0.05);
+  alert(numberOfNickels);
   let numberOfPennies = Math.floor(((amount % 0.25) % 0.10) % 0.05);
+  alert(numberOfPennies);
   let coins = numberOfQuarters + numberOfDimes + numberOfNickels + numberOfPennies;
   let ending;
   if (coins <= 1) {
