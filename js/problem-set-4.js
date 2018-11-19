@@ -227,7 +227,7 @@ function change() {
   let numberOfNickels = Math.floor(((amount % 0.25) % 0.10) / 0.05);
   let numberOfPennies = Math.floor(((amount % 0.25) % 0.10) % 0.05);
   let coins = numberOfQuarters + numberOfDimes + numberOfNickels + numberOfPennies;
-  let ending
+  let ending;
   if (coins <= 1) {
     ending = " coin.";
   } else {
