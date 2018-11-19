@@ -222,13 +222,18 @@ function change() {
   ////////////////////// DO NOT MODIFY
   let amount = input; // DO NOT MODIFY
   ////////////////////// DO NOT MODIFY
-  let quarters10 = Math.floor(amount / 0.25);
-  let dimes10 = Math.floor((amount % 0.25) / 0.10);
-  let nickels10 = Math.floor(((amount % 0.25) % 0.10) / 0.05);
-  let pennies10 = Math.floor(((amount % 0.25) % 0.10) % 0.05);
+  let amount = amount * 100
+  let quarters10 = Math.floor(amount / 25);
+  let dimes10 = Math.floor((amount % 25) / 10);
+  let nickels10 = Math.floor(((amount % 25) % 10) / 5);
+  let pennies10 = Math.floor(((amount % 25) % 10) % 5);
   let coins = quarters10 + dimes10 + nickels10 + pennies10;
+  if (coins > 1) {
+    let ending = "coin."
+  } else {
+    let ending = "coins."
   let ten = document.getElementById('output10');
-  ten.innerHTML = coins + ' coins.';
+  ten.innerHTML = coins + ending;
   ////////////////////////// DO NOT MODIFY
   check("change", input); // DO NOT MODIFY
   ////////////////////////// DO NOT MODIFY
